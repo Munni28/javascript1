@@ -7,24 +7,36 @@
 </head>
 <body>
     <p> <b> create a text box </b></p>
-    <select>
-        <option>choose your city</option>
-        <option>visakhapatnam</option>
-        <option> srikakulam</option>
-        <option>vijayanagaram</option>
-        <option>vijayawada</option>
-        <option>rayalaseema</option>
-        <option>gunturu</option>
-        <option> kakinada</option>
-        <option>rajamandri</option>
-        <option>chittore</option>
+    <select id="se">
+        <option value="">choose your city</option>
+        <option value="visakhapatnam">visakhapatnam</option>
+        <option value="srikakulam"> srikakulam</option>
+        <option value="vijayanagaram">vijayanagaram</option>
+        <option value="vijayawada">vijayawada</option>
+        <option value="rayalaseema">rayalaseema</option>
+        <option value="gunturu">gunturu</option>
+        <option value="kakinada"> kakinada</option>
+        <option value="rajamandri">rajamandri</option>
+        <option value="chittore">chittore</option>
     </select>
-    <input type="text" onkeyup="fittercity()"/>
+    <input type="text" id="re" onkeyup="fittercity()"/>
 </body>
 <script>
-    function fittercity(){
-        console.log("keyup");
+   function fittercity(){
+        let x=document.getElementById("re").value;
+        let y=document.getElementById("se").value;
+        for(let i=0;i<=y.lenght;i++){
+            if(y[i]==x){
+                console.log("it is in the list");
+            }
+        else{
+            console.log("it is in the list");
+        }
     }
+}
+
+
+
 </script>
 <button onclick="fittercity()">search</button>
 </html>
