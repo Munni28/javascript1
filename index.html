@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <script>
-        var x=2;
-        var y=3;
-        console.log(x**y);
-    </script>
+    <p> <b> create a text box </b></p>
+    <select>
+        <option>choose your city</option>
+        <option>visakhapatnam</option>
+        <option> srikakulam</option>
+        <option>vijayanagaram</option>
+        <option>vijayawada</option>
+        <option>rayalaseema</option>
+        <option>gunturu</option>
+        <option> kakinada</option>
+        <option>rajamandri</option>
+        <option>chittore</option>
+    </select>
+    <input type="text" onkeyup="fittercity()"/>
 </body>
+<script>
+    function fittercity(){
+        console.log("keyup");
+    }
+</script>
+<button onclick="fittercity()">search</button>
 </html>
