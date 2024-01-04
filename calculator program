@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Creating Webpage</title>
+</head>
+<body>
+    <h1>simple program</h1>
+    <input type="Number" id="1stnumber" />
+    <input type="Number" id="2ndnumber"/>
+    <button type="submit" onclick="add()">add</button>
+    <button type="submit" onclick="sub()">sub</button>
+    <button type="submit" onclick="mult()">mult</button>
+    <button type="submit" onclick="div()">div</button>
+</body>
+<script>
+function add(){
+    let x=document.getElementById("1stnumber").value;
+    let x1=parseInt(x);
+    let y=document.getElementById("2ndnumber").value;
+    let y1=parseInt(y);
+    const z=x1+y1;
+    document.write(z);
+}
+function sub(){
+    let x=document.getElementById("1stnumber").value;
+    let x1=parseInt(x);
+    let y=document.getElementById("2ndnumber").value;
+    let y1=parseInt(y);
+    const z=x1-y1;
+    document.write(z);
+}
+function mult(){
+    let x=document.getElementById("1stnumber").value;
+    let x1=parseInt(x);
+    let y=document.getElementById("2ndnumber").value;
+    let y1=parseInt(y);
+    const z=x1*y1;
+    document.write(z);
+}
+function div(){
+    let x=document.getElementById("1stnumber").value;
+    let x1=parseInt(x);
+    let y=document.getElementById("2ndnumber").value;
+    let y1=parseInt(y);
+    const z=x1/y1;
+    document.write(z);
+}
+</script>
+</html>
